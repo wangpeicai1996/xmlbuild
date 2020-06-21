@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "G:/ideaspace/xmlbuild/src/main/java/even/xmlresolver/mybatis-3-mapper.dtd">
+<mapper namespace="even.mapper.BlogMapper">
+    <select id="selectById" resultType="Blog">
+        select * from Blog where id=#{id}
+    </select>
+    <select id="selectByName" resultType="Blog">
+        select * from Blog where name=#{name}
+    </select>
+</mapper>
